@@ -1,4 +1,21 @@
+.topBar{
+	background: #ffffff;
+	border-bottom: #cccccc solid 5px;
+}
+
+.middle{
+	background: orange;
+}
+
+.bottomBar{
+	background: #666666;
+	border-top: #4aaaa5 solid 10px;
+	text-align: center;
+	padding: 30px;
+}
+
 .imageLink{
 	height: 60px;
 	width: 60px;
+
 }
