@@ -2,46 +2,47 @@
 	background: #ffffff;
 	border-bottom: #cccccc solid 5px;  /* is this list correct?*/
 	overflow: auto;
-	padding-left: 10%;
+	padding-left: 20%;
 }
 
 .topBar_left {
 	float: left;
 	width: 20%;
 	background-color: green;
+  	margin-left: 15px;
 	padding: 20px;
 }
 
 .topBar_right {
-	float: right;
-	width: 30%;
+	float: left;
+ 	padding: 20px;
+ 	margin-left: 25%;
 }
 
 .middleBar {
 	background: orange;
 	clear: both;
 	overflow: auto;
-	padding-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	padding-right: 0px;
-	padding-bottom: 30px;
-	padding-left: 10%;
+	padding-left: 20%;
 }
 
 .middleBar_main {
 	float: left;
-	width: 40%;
+	overflow: auto;
+  	width: 40%;
 	background-color: white;
 	padding: 30px;
+ 	margin: 15px;
 }
 
 .middleBar_right {
 	float: left;
-	display: inline-block;
+	width: 20%;
 	background-color: white;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 30px;
+	margin: 15px;
 	padding: 30px;
 }
 .bottomBar {
@@ -52,13 +53,16 @@
 }
 
 .imageLink {
-	height: 60px;
-	width: 60px;
+	height: 30%;
+	width: 30%;
 }
 
 #profilePic {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 30px;
+}
 
+a {
+	text-decoration: none;
 }
