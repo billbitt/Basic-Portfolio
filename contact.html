@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="standardText">
 	<!-- this section is the top navigation bar -->	
 	<div class="topBar">
 		<div class="topBar__name">
@@ -25,7 +25,24 @@
 		<div class="contentBox contentBox__main">
 			<h2>Contact</h2>
 			<hr>
-			
+			<form action="" method="post" class="contactForm standardText">  <!-- need to update action -->
+				<div>
+					<label for="name">Name</label>
+					<input type="text" id ="name" name="user_name" value="Enter your name here"/>
+				</div>
+				<div>
+					<label for="mail">Email</label>
+					<input type="email" id="mail" name="user_mail" value="Enter your email address here"/>
+				</div>
+				<div>
+					<label for="message">Message</label>
+					<textarea id="msg" name="user_message">Enter your message here</textarea>
+				</div>
+
+				<div class="button">
+					<button type="submit">Send your message</button>
+				</div>
+			</form>
 
 		</div>
 		<div class="contentBox contentBox__connect">

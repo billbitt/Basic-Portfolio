@@ -33,6 +33,7 @@
 .contentBox {
 	border: #CCCCCC solid 1px;
 }
+
 .contentBox__main {
 	float: left;
 	overflow: auto;
@@ -44,6 +45,7 @@
 
 .contentBox__connect {
 	float: left;
+	overflow: auto;
 	width: 20%;
 	background-color: #ffffff;
 	margin: 15px;
@@ -51,18 +53,20 @@
 }
 .bottomBar {
 	background-color: #666666;
+	color: #cccccc;
 	border-top: #4aaaa5 solid 8px;
 	text-align: center;
 	padding: 30px 30px 30px 30px;
 }
 
-/*page specific items */
+/*about page items */
 #profilePic {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
 
+/*portfolio page items*/
 .portfolioItem__odd {
 	float: left;
 	width:45%;
@@ -92,13 +96,51 @@
 	background-color: #4aaaa5;
 }
 
-/*general items*/
-body {
+/*contact page elements*/
+
+form {
+	margin: 20px 0px 0px 0px;
+}
+input {
+	width: 100%;
+	margin: 10px 0px 20px 0px;
 	font-family: Arial;
+	color: #CCCCCC
+}
+
+textarea {
+	width: 100%;
+	margin: 10px 0px 20px 0px;
+	font-family: Arial;
+	color: #CCCCCC
+}
+
+button {
+	background-color: #4aaaa5;
+	border: none;
+	padding: 15px;
+	font-family: Arial;
+	color: #ffffff;
+}
+
+/*general elements*/
+body {
 	background-image: url("../images/background.png");
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
+}
+
+hr {
+	border: 0px;
+	height: 1px;
+	background-color: #CCCCCC;
+}
+
+/*text and header styles*/
+.standardText {
+	font-family: Arial;
+	color: #777777
 }
 
 h1, h2, h3, h4 {
@@ -114,10 +156,7 @@ h1, h2, h3, h4 {
 	color: #ffffff;
 }
 
-p {
-	color: #777777;
-}
-
+/*link styles*/
 a {
 	text-decoration: none;
 }
@@ -131,8 +170,4 @@ a {
 	color: #777777;
 }
 
-hr {
-	border: 0px;
-	height: 1px;
-	background-color: #CCCCCC;
-}
+
