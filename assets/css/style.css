@@ -1,3 +1,4 @@
+/*generic sections and content boxes */
 .topBar {
 	background-color: #ffffff;
 	border-bottom: #cccccc solid 3px;  /* is this list correct?*/
@@ -5,25 +6,19 @@
 	padding-left: 20%;
 }
 
-.contentBox {
-	border: #777777 solid 1px;
-}
-.topBar_left {
+.topBar__name {
 	float: left;
 	background-color: #4aaaa5;
   	margin-left: 15px;
 	padding: 0px 30px 0px 30px;
 }
 
-.topBar_right {
-	float: left;
-	margin-left: 25%;
+.topBar__navigation {
+	float: right;
+	margin-right: 30%;
+	margin-left: 15px;
  	/*background-color: orange;*/
  	vertical-align: bottom;  /*why isn't this working?*/
-}
-
-.navLink {
-	color: #777777;
 }
 
 .middleBar {
@@ -35,7 +30,10 @@
 	padding-left: 20%;
 }
 
-.middleBar_main {
+.contentBox {
+	border: #CCCCCC solid 1px;
+}
+.contentBox__main {
 	float: left;
 	overflow: auto;
   	width: 40%;
@@ -44,7 +42,7 @@
  	margin: 15px;
 }
 
-.middleBar_right {
+.contentBox__connect {
 	float: left;
 	width: 20%;
 	background-color: #ffffff;
@@ -58,34 +56,62 @@
 	padding: 30px 30px 30px 30px;
 }
 
-.imageLink {
-	height: 30%;
-	width: 30%;
-}
-
+/*page specific items */
 #profilePic {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
 
+.portfolioItem__odd {
+	float: left;
+	width:45%;
+	height: 45%;
+	position: relative;
+	margin: 30px 0px 0px 0px;
+}
+
+.portfolioItem__even {
+	float: right;
+	width:45%;
+	height: 45%;
+	position: relative;
+	margin: 30px 0px 0px 0px;
+}
+
+.portfolioPic {
+	width: 100%;
+	height: 100%;
+}
+
+.portfolioTitle {
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	text-align: center;
+	background-color: #4aaaa5;
+}
+
+/*general items*/
 body {
 	font-family: Arial;
-	background-image: url("../images/black_scales.png");
+	background-image: url("../images/background.png");
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
 }
-h1, h2, h3 {
+
+h1, h2, h3, h4 {
 	font-family: Georgia;
+	color: #4aaaa5;
 }
 
-h1 {
+.h1--name {
 	color: #ffffff;
 }
 
-h2, h3 {
-	color: #4aaaa5;
+.h4--portfolioTitle {
+	color: #ffffff;
 }
 
 p {
@@ -96,8 +122,17 @@ a {
 	text-decoration: none;
 }
 
+.a__imageLink {
+	height: 30%;
+	width: 30%;
+}
+
+.a__navLink {
+	color: #777777;
+}
+
 hr {
 	border: 0px;
-	height: 2px;
-	background-color: #777777;
+	height: 1px;
+	background-color: #CCCCCC;
 }
