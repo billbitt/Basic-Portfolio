@@ -56,7 +56,7 @@
 	color: #cccccc;
 	border-top: #4aaaa5 solid 8px;
 	text-align: center;
-	padding: 30px 30px 30px 30px;
+	
 }
 
 /*about page items */
@@ -124,11 +124,9 @@ button {
 }
 
 /*general elements*/
+
 body {
 	background-image: url("../images/background.png");
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
 }
 
 hr {
@@ -179,4 +177,24 @@ a {
 	color: #4aaaa5;
 }
 
+/* stick footer css */
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 100%;
+}
 
+.pageWrap {
+	min-height: 100%;
+	margin-bottom: -68px;
+}
+
+.pageWrap:after {
+	content: "";
+	display: block;
+}
+
+.bottomBar, .pageWrap:after {
+	height: 60px;
+}
