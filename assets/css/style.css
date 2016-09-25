@@ -1,26 +1,32 @@
 .topBar {
-	background: #ffffff;
-	border-bottom: #cccccc solid 5px;  /* is this list correct?*/
+	background-color: #ffffff;
+	border-bottom: #cccccc solid 3px;  /* is this list correct?*/
 	overflow: auto;
 	padding-left: 20%;
 }
 
+.contentBox {
+	border: #777777 solid 1px;
+}
 .topBar_left {
 	float: left;
-	width: 20%;
-	background-color: green;
+	background-color: #4aaaa5;
   	margin-left: 15px;
-	padding: 20px;
+	padding: 0px 30px 0px 30px;
 }
 
 .topBar_right {
 	float: left;
- 	padding: 20px;
- 	margin-left: 25%;
+	margin-left: 25%;
+ 	/*background-color: orange;*/
+ 	vertical-align: bottom;  /*why isn't this working?*/
+}
+
+.navLink {
+	color: #777777;
 }
 
 .middleBar {
-	background: orange;
 	clear: both;
 	overflow: auto;
 	padding-top: 15px;
@@ -33,21 +39,21 @@
 	float: left;
 	overflow: auto;
   	width: 40%;
-	background-color: white;
-	padding: 30px;
+	background-color: #ffffff;
+	padding: 0px 30px 30px 30px;
  	margin: 15px;
 }
 
 .middleBar_right {
 	float: left;
 	width: 20%;
-	background-color: white;
+	background-color: #ffffff;
 	margin: 15px;
-	padding: 30px;
+	padding: 0px 30px 30px 30px;
 }
 .bottomBar {
-	background: #666666;
-	border-top: #4aaaa5 solid 10px;
+	background-color: #666666;
+	border-top: #4aaaa5 solid 8px;
 	text-align: center;
 	padding: 30px 30px 30px 30px;
 }
@@ -63,6 +69,35 @@
 	margin-bottom: 30px;
 }
 
+body {
+	font-family: Arial;
+	background-image: url("../images/black_scales.png");
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+h1, h2, h3 {
+	font-family: Georgia;
+}
+
+h1 {
+	color: #ffffff;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+}
+
+p {
+	color: #777777;
+}
+
 a {
 	text-decoration: none;
+}
+
+hr {
+	border: 0px;
+	height: 2px;
+	background-color: #777777;
 }
