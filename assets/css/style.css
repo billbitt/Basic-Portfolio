@@ -1,8 +1,8 @@
 /*generic sections and content boxes */
 .topBar {
+	overflow: auto;
 	background-color: #ffffff;
 	border-bottom: #cccccc solid 3px;  /* is this list correct?*/
-	overflow: auto;
 	padding-left: 20%;
 }
 
@@ -18,7 +18,6 @@
 	margin-right: 30%;
 	margin-left: 15px;
  	/*background-color: orange;*/
- 	vertical-align: bottom;  /*why isn't this working?*/
 }
 
 .middleBar {
@@ -51,12 +50,12 @@
 	margin: 15px;
 	padding: 0px 30px 30px 30px;
 }
+
 .bottomBar {
 	background-color: #666666;
 	color: #cccccc;
 	border-top: #4aaaa5 solid 8px;
 	text-align: center;
-	
 }
 
 /*about page items */
@@ -123,6 +122,11 @@ button {
 	color: #ffffff;
 }
 
+button:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+
 /*general elements*/
 
 body {
@@ -175,6 +179,11 @@ a {
 
 .a__navLink:hover {
 	color: #4aaaa5;
+}
+
+.a__portfolioLink:hover {
+	z-index: -1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* stick footer css */
