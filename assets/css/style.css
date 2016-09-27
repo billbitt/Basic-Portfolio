@@ -3,30 +3,34 @@
 	overflow: auto;
 	background-color: #ffffff;
 	border-bottom: #cccccc solid 3px;  /* is this list correct?*/
-	padding-left: 20%;
+}
+
+.sectionWrap {
+	overflow: auto;
+	position: relative;
+	width: 960px;
+	margin-left: 20%;
+	background-color: yellow;
 }
 
 .topBar__name {
 	float: left;
 	background-color: #4aaaa5;
-  	margin-left: 15px;
 	padding: 0px 30px 0px 30px;
 }
 
 .topBar__navigation {
-	float: right;
-	margin-right: 30%;
-	margin-left: 15px;
- 	/*background-color: orange;*/
+ 	background-color: orange;
+ 	position: absolute;  /*can i do this with float instead?*/
+ 	bottom: 20%;
+ 	right: 0px;
 }
 
-.middleBar {
+.content {
 	clear: both;
 	overflow: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 0px;
-	padding-left: 20%;
+	background-color: purple;
+	padding: 30px 0px 30px 0px;
 }
 
 .contentBox {
@@ -36,26 +40,26 @@
 .contentBox__main {
 	float: left;
 	overflow: auto;
-  	width: 40%;
+  	width: 590px;
 	background-color: #ffffff;
-	padding: 0px 30px 30px 30px;
- 	margin: 15px;
+	padding: 30px 30px 30px 30px;
 }
 
 .contentBox__connect {
-	float: left;
+	float: right;
 	overflow: auto;
-	width: 20%;
+	width: 210px;
 	background-color: #ffffff;
-	margin: 15px;
-	padding: 0px 30px 30px 30px;
+	padding: 30px 30px 30px 30px;
 }
 
-.bottomBar {
+footer {
 	background-color: #666666;
 	color: #cccccc;
 	border-top: #4aaaa5 solid 8px;
 	text-align: center;
+	vertical-align: center; /*why doesn't this work?*/
+	font-size: small;
 }
 
 /*about page items */
@@ -102,6 +106,7 @@ form {
 }
 input {
 	width: 100%;
+	padding: 5px;
 	margin: 10px 0px 20px 0px;
 	font-family: Arial;
 	color: #CCCCCC
@@ -109,6 +114,8 @@ input {
 
 textarea {
 	width: 100%;
+	height: 200px;
+	padding: 5px;
 	margin: 10px 0px 20px 0px;
 	font-family: Arial;
 	color: #CCCCCC
@@ -117,8 +124,9 @@ textarea {
 button {
 	background-color: #4aaaa5;
 	border: none;
-	padding: 15px;
+	padding: 15px 30px 15px 30px;
 	font-family: Arial;
+	font-size: large;
 	color: #ffffff;
 }
 
@@ -135,8 +143,15 @@ body {
 
 hr {
 	border: 0px;
-	height: 1px;
 	background-color: #CCCCCC;
+}
+
+.hr--content {
+	height: 2px;
+}
+
+.hr--contact {
+	height: 1px;
 }
 
 /*text and header styles*/
@@ -164,6 +179,7 @@ a {
 }
 
 .a__imageLink {
+	padding: 15px 2px 15px 2px;
 	height: 30%;
 	width: 30%;
 }
@@ -204,6 +220,6 @@ html, body {
 	display: block;
 }
 
-.bottomBar, .pageWrap:after {
+footer, .pageWrap:after {
 	height: 60px;
 }
