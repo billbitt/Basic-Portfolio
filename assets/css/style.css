@@ -6,10 +6,10 @@
 }
 
 .sectionWrap {
+	/*background-color: yellow;*/
 	overflow: auto;
 	width: 960px;
 	margin: auto;
-	background-color: yellow;
 }
 
 .topBar__name {
@@ -19,16 +19,16 @@
 }
 
 .topBar__navigation {
- 	background-color: orange;
+ 	/*background-color: orange;*/
  	float: right;
  	margin-top: 20px;
 }
 
 .middle {
+	/*background-color: purple;*/
 	clear: both;
-	overflow: auto;
-	background-color: purple;
 	padding: 40px 0px 40px 0px;
+	overflow: auto;
 }
 
 .contentBox {
@@ -39,23 +39,14 @@
 
 .contentBox__main {
 	float: left;
-	overflow: auto;
   	width: 590px;
+  	overflow: auto;
 }
 
 .contentBox__connect {
 	float: right;
-	overflow: auto;
 	width: 210px;
-}
-
-footer {
-	background-color: #666666;
-	color: #cccccc;
-	border-top: #4aaaa5 solid 8px;
-	text-align: center;
-	font-size: small;
-	padding-top: 20px;
+	overflow: auto;
 }
 
 /*about page items */
@@ -67,17 +58,17 @@ footer {
 /*portfolio page items*/
 .portfolioItem__odd {
 	float: left;
+	position: relative;
 	width:45%;
 	height: 45%;
-	position: relative;
 	margin: 30px 0px 0px 0px;
 }
 
 .portfolioItem__even {
 	float: right;
+	position: relative;
 	width:45%;
 	height: 45%;
-	position: relative;
 	margin: 30px 0px 0px 0px;
 }
 
@@ -100,26 +91,26 @@ form {
 }
 
 input {
-	width: 100%;
-	padding: 5px;
 	margin: 10px 0px 20px 0px;
-	font-family: Arial;
+	border: #CCCCCC solid 1px;
+	padding: 5px;
+	width: 580px;
 	color: #CCCCCC
 }
 
 textarea {
+	margin: 10px 0px 20px 0px;
+	border: #CCCCCC solid 1px;
+	padding: 5px;
 	width: 580px;
 	height: 200px;
-	padding: 5px;
-	margin: 10px 0px 20px 0px;
-	font-family: Arial;
 	color: #CCCCCC
 }
 
 button {
-	background-color: #4aaaa5;
 	border: none;
 	padding: 15px 30px 15px 30px;
+	background-color: #4aaaa5;
 	font-size: large;
 	color: #ffffff;
 }
@@ -142,12 +133,23 @@ hr {
 
 .hr--content {
 	height: 2px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .hr--contact {
+	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 1px;
+}
+
+footer {
+	background-color: #666666;
+	color: #cccccc;
+	border-top: #4aaaa5 solid 8px;
+	text-align: center;
+	font-size: small;
+	padding-top: 20px;
 }
 
 /*text styles*/
@@ -180,13 +182,13 @@ h3 {
 
 .standardText {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777
 }
 
 p {
-	color: #777777;
 	line-height: 2;
-	/*font-weight: bold;*/
 }
+
 /*link styles*/
 a {
 	text-decoration: none;
