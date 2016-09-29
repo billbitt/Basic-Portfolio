@@ -103,7 +103,7 @@ footer {
 
 .portfolioTitle {
 	position: absolute;
-	bottom: 10%;
+	bottom: 10px;
 	width: 100%;
 	text-align: center;
 	background-color: #4aaaa5;
@@ -117,17 +117,19 @@ form {
 input {
 	margin: 10px 0px 20px 0px;
 	border: #CCCCCC solid 1px;
-	padding: 5px 10px 5px 10px;
+	padding: 10px;
 	width: 570px;
+	font-size: normal;
 	color: #cccccc;
 }
 
 textarea {
 	margin: 10px 0px 20px 0px;
 	border: #CCCCCC solid 1px;
-	padding: 5px 10px 5px 10px;
+	padding: 10px;
 	width: 570px;
 	height: 200px;
+	font-size: small;
 	color: #CCCCCC;
 }
 
@@ -195,6 +197,7 @@ h3 {
 	color: #ffffff;
 	font-weight: normal;
 	line-height: 2;
+	margin: 5px 0px 5px 0px;
 }
 
 .standardText {
