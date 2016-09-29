@@ -1,4 +1,8 @@
 /*generic sections and content boxes */
+body {
+	background-image: url("../images/background.png");
+}
+
 .topBar {
 	overflow: auto;
 	background-color: #ffffff;
@@ -25,6 +29,7 @@
  	position: absolute;
  	right: 0px;
  	bottom: 40%;
+ 	color: #dddddd;
 }
 
 .middleBar {
@@ -59,6 +64,14 @@
 	overflow: auto;
 }
 
+footer {
+	background-color: #666666;
+	color: #cccccc;
+	border-top: #4aaaa5 solid 8px;
+	text-align: center;
+	font-size: small;
+}
+
 /*about page items */
 #profilePic {
 	width: 200px;
@@ -70,17 +83,17 @@
 .portfolioItem__odd {
 	float: left;
 	position: relative;
-	width:45%;
-	height: 45%;
-	margin: 30px 0px 0px 0px;
+	width: 275px;
+	height: 205px;
+	margin: 30px 0px 30px 0px;
 }
 
 .portfolioItem__even {
 	float: right;
 	position: relative;
-	width:45%;
-	height: 45%;
-	margin: 30px 0px 0px 0px;
+	width: 275px;
+	height: 205px;
+	margin: 30px 0px 30px 0px;
 }
 
 .portfolioPic {
@@ -105,22 +118,22 @@ input {
 	margin: 10px 0px 20px 0px;
 	border: #CCCCCC solid 1px;
 	padding: 5px 10px 5px 10px;
-	width: 580px;
+	width: 570px;
 	color: #cccccc;
 }
 
 textarea {
 	margin: 10px 0px 20px 0px;
 	border: #CCCCCC solid 1px;
-	padding: 5px;
-	width: 580px;
+	padding: 5px 10px 5px 10px;
+	width: 570px;
 	height: 200px;
 	color: #CCCCCC;
 }
 
 button {
 	border: none;
-	padding: 15px 30px 15px 30px;
+	padding: 10px 35px 10px 35px;
 	background-color: #4aaaa5;
 	font-size: large;
 	color: #ffffff;
@@ -133,33 +146,24 @@ button:hover {
 
 /*general elements*/
 
-body {
-	background-image: url("../images/background.png");
-}
+
 
 hr {
 	border: 0px;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 .hr--content {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	height: 3px;
 	background-color: #dddddd;
 }
 
 .hr--contact {
+	margin-top: 15px;
+	margin-bottom: 15px;
 	height: 2px;
 	background-color: #eeeeee;
-}
-
-footer {
-	background-color: #666666;
-	color: #cccccc;
-	border-top: #4aaaa5 solid 8px;
-	text-align: center;
-	font-size: small;
-	padding-top: 20px;
 }
 
 /*text styles*/
@@ -184,10 +188,13 @@ h2 {
 
 h3 {
 	font-size: large;
+
 }
 
-.h4--portfolioTitle {
+.h2--portfolioTitle {
 	color: #ffffff;
+	font-weight: normal;
+	line-height: 2;
 }
 
 .standardText {
@@ -210,10 +217,11 @@ a {
 	float: left;
 	height: 60px;
 	width: 60px;
+	margin-top: 5px;
 }
 
 .contactLink--padded {
-	margin: 0px 14px 0px 0px;
+	margin-right: 14px;
 }
 
 .contactLink:hover {
@@ -240,7 +248,7 @@ a {
 	margin: 0px 0px 0px 10px;
 }
 
-.a__portfolioLink:hover {
+.portfolioLink:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
