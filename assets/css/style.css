@@ -70,6 +70,7 @@ footer {
 	border-top: #4aaaa5 solid 8px;
 	text-align: center;
 	font-size: small;
+	padding: 40px 0px 40px;
 }
 
 /*about page items */
@@ -206,7 +207,7 @@ h3 {
 
 p {
 	line-height: 2;
-	margin: 20px 0px 20px 0px;
+	margin: 10px 0px 10px 0px;
 }
 
 /*link styles*/
