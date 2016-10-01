@@ -6,7 +6,7 @@ body {
 .topBar {
 	overflow: auto;
 	background-color: #ffffff;
-	border-bottom: #cccccc solid 2px;  /* is this list correct?*/
+	border-bottom: #cccccc solid 2px;  /* is this list correct?*/  /* Did it work? If the answer is yes, sure. Usually, devs will do 2px solid #color */
 }
 
 .topWrap {
@@ -23,7 +23,7 @@ body {
 }
 
 .topBar__navigation {
- 	/*background-color: orange;*/
+ 	/*background-color: orange;*/  /*I like that you used test cases to make sure that things were workign the way they were supposed to. When you're done, clean this up by taking it out*/
  	float: right;
  	margin-top: 35px;
  	color: #dddddd;
@@ -164,8 +164,8 @@ hr {
 	background-color: #eeeeee;
 }
 
-/*text styles*/
-h1, h2, h3, h4 {
+/*text styles*/ 
+h1, h2, h3, h4 {  /* nice work chaining your elements! */
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: bold;
 	color: #4aaaa5;
@@ -212,7 +212,7 @@ a {
 	text-decoration: none;
 }
 
-.contactLink {
+.contactLink {  /* nice!!! */
 	float: left;
 	height: 60px;
 	width: 60px;
@@ -231,7 +231,7 @@ a {
 	color: #777777;
 }
 
-.navLink:hover {
+.navLink:hover { /* excellent use of pseudo classes to achieve your goal */
 	color: #4aaaa5;
 }
 
@@ -247,7 +247,7 @@ a {
 	margin: 0px 0px 0px 10px;
 }
 
-.portfolioLink:hover {
+.portfolioLink:hover { /* nice attention to detail */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -264,7 +264,7 @@ html, body {
 	margin-bottom: -68px;
 }
 
-.pageWrap:after {
+.pageWrap:after { /* it's cool tha tyou made this an after pseudoclass. do you really need to? */
 	content: "";
 	display: block;
 }
