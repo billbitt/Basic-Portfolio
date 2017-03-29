@@ -1,2 +1,2 @@
 # Basic-Portfolio
-Homework #1 - uclaBootcamp
+A basic portfolio done entirely with HTML and CSS
